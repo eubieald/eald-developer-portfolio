@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parcel / Bootstrap Boilerplate</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+  <link rel="stylesheet" href="./assets/scss/main.scss">
+
+  <!-- add tab icon -->
+  <link rel="icon" type="image/png" sizes="32x32"
+    href="https://d15lhc6p38kxp4.cloudfront.net/f0a1fa68-d7da-41b1-b549-d7aa82c0793b/favicons/pianote/favicon-32x32.png?v=2018">
+  <link rel="icon" type="image/png" sizes="16x16"
+    href="https://d15lhc6p38kxp4.cloudfront.net/f0a1fa68-d7da-41b1-b549-d7aa82c0793b/favicons/pianote/favicon-16x16.png?v=2018">
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <!-- Logo / Brand -->
+        <a class="navbar-brand" href="#">Eubie Aluad</a>
+
+        <!-- Toggler for mobile -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+          aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navigation Links -->
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#about-me">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- <div class="diagonal-design mt-20 mt-sm-40"></div> -->
+  <main>
+    <section id="about-me" class="about-me px-20 py-40 px-sm-4 py-sm-56 px-xl-24 py-xl-80 text-center">
+      <div class="container mx-auto p-0">
+        <h2 class="mb-0">
+          <strong>Hey there! 👋 I'm Eubie,</strong>
+        </h2>
+        <p class="leading-tight mt-2 mb-0">I am a <strong>Frontend Developer</strong>
+        </p>
+        <div class="two-column-container d-flex align-items-center justify-content-center flex-md-nowrap mt-3 my-xl-4">
+          <div class="image-column me-0 me-md-4 me-xl-32 text-center text-md-start">
+            <img src="./assets/images/eubie.png" class="img-fluid lazyload rounded-circle" alt="Pianote Songs Section">
+          </div>
+          <div class="icon-text-column w-100 mt-4 pe-xl-32">
+            <div class="d-flex gap-4 mb-4">
+              <div class="icon-wrapper flex-grow-0">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="40" viewBox="0 0 38 29" width="40">
+                  <path
+                    d="M36.1 10.4894H32.3V1.85106C32.2994 1.36031 32.099 0.889813 31.7429 0.542795C31.3867 0.195777 30.9037 0.00057155 30.4 0H1.9C1.39627 0.00057155 0.913337 0.195777 0.557145 0.542795C0.200953 0.889813 0.00058666 1.36031 0 1.85106V20.8245C0.00058666 21.3152 0.200953 21.7857 0.557145 22.1327C0.913337 22.4798 1.39627 22.675 1.9 22.6755H15.5167V26.5319H10.7667V29H22.8V26.5319H18.05V22.6755H25.3333V27.1489C25.3339 27.6397 25.5343 28.1102 25.8905 28.4572C26.2467 28.8043 26.7296 28.9994 27.2333 29H36.1C36.6037 28.9994 37.0867 28.8043 37.4429 28.4572C37.7991 28.1102 37.9994 27.6397 38 27.1489V12.3404C37.9994 11.8497 37.7991 11.3792 37.4429 11.0321C37.0867 10.6851 36.6037 10.4899 36.1 10.4894ZM25.3333 12.3404V20.2074H2.53333V2.46809H29.7667V10.4894H27.2333C26.7296 10.4899 26.2467 10.6851 25.8905 11.0321C25.5343 11.3792 25.3339 11.8497 25.3333 12.3404ZM35.4667 26.5319H27.8667V12.9574H35.4667V26.5319Z"
+                    fill="#F61A30" />
+                </svg>
+              </div>
+              <div class="text-wrapper flex-grow text-start">
+                <h5>
+                  <strong>Technologies</strong>
+                </h5>
+                <p class="mt-1 mt-sm-2">Specializes in Web Development : Next JS (React), Magento E-Commerce, Wordpress
+                </p>
+              </div>
+            </div>
+            <div class="d-flex gap-4 mb-4">
+              <div class="icon-wrapper flex-grow-0">
+                <svg class="support-icon" xmlns="http://www.w3.org/2000/svg" fill="none" height="40" viewBox="0 0 37 37"
+                  width="40">
+                  <path
+                    d="M13.875 25.4375C13.875 23.284 15.3492 21.4701 17.2787 20.957V6.87246C17.2787 6.29867 17.8641 5.71621 18.435 5.71621C19.1359 5.71621 19.6562 6.29867 19.6562 6.87246V20.957C21.6508 21.4701 23.125 23.284 23.125 25.4375C23.125 27.9885 21.051 30.0625 18.5 30.0625C15.949 30.0625 13.875 27.9885 13.875 25.4375ZM18.5 27.75C19.7791 27.75 20.8125 26.7166 20.8125 25.4375C20.8125 24.1584 19.7791 23.125 18.5 23.125C17.2209 23.125 16.1875 24.1584 16.1875 25.4375C16.1875 26.7166 17.2209 27.75 18.5 27.75ZM8.67188 10.4062C8.67188 9.44512 9.44512 8.67188 10.4062 8.67188C11.3674 8.67188 12.1406 9.44512 12.1406 10.4062C12.1406 11.3674 11.3674 12.1406 10.4062 12.1406C9.44512 12.1406 8.67188 11.3674 8.67188 10.4062ZM8.67188 18.5C8.67188 19.4611 7.89863 20.2344 6.9375 20.2344C5.97998 20.2344 5.20312 19.4611 5.20312 18.5C5.20312 17.5389 5.97998 16.7656 6.9375 16.7656C7.89863 16.7656 8.67188 17.5389 8.67188 18.5ZM28.3281 18.5C28.3281 17.5389 29.1014 16.7656 30.0625 16.7656C31.0236 16.7656 31.7969 17.5389 31.7969 18.5C31.7969 19.4611 31.0236 20.2344 30.0625 20.2344C29.1014 20.2344 28.3281 19.4611 28.3281 18.5ZM28.3281 10.4062C28.3281 11.3674 27.5549 12.1406 26.5938 12.1406C25.6326 12.1406 24.8594 11.3674 24.8594 10.4062C24.8594 9.44512 25.6326 8.67188 26.5938 8.67188C27.5549 8.67188 28.3281 9.44512 28.3281 10.4062ZM0 18.5C0 8.28164 8.28164 0 18.5 0C28.7184 0 37 8.28164 37 18.5C37 28.7184 28.7184 37 18.5 37C8.28164 37 0 28.7184 0 18.5ZM18.5 34.6875C27.4393 34.6875 34.6875 27.4393 34.6875 18.5C34.6875 9.56074 27.4393 2.3125 18.5 2.3125C9.56074 2.3125 2.3125 9.56074 2.3125 18.5C2.3125 27.4393 9.56074 34.6875 18.5 34.6875Z"
+                    fill="#F61A30" />
+                </svg>
+              </div>
+              <div class="text-wrapper flex-grow text-start">
+                <h5>
+                  <strong>Support</strong>
+                </h5>
+                <p class="mt-1 mt-sm-2">24/7 Online</p>
+                </p>
+              </div>
+            </div>
+            <div class="d-flex gap-4 mb-4">
+              <div class="icon-wrapper flex-grow-0">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="40" viewBox="0 0 37 37" width="40">
+                  <path
+                    d="M35.8438 17.8752C35.2078 17.8752 34.6875 18.3815 34.6875 19.0002C34.6875 24.5837 30.0199 29.1252 24.2812 29.1252H13.875V24.6252C13.875 24.188 13.6153 23.7927 13.2088 23.6057C13.0512 23.5354 12.885 23.5002 12.7188 23.5002C12.4534 23.5002 12.1903 23.5881 11.978 23.7617L5.04053 29.3867C4.77748 29.6034 4.625 29.9198 4.625 30.2502C4.625 30.5807 4.77741 30.9009 5.04053 31.1144L11.978 36.7394C12.3235 37.0206 12.8055 37.0777 13.2087 36.8954C13.6148 36.712 13.875 36.3112 13.875 35.8752V31.3752H24.2812C31.2946 31.3752 37 25.8227 37 19.0002C37 18.3815 36.4797 17.8752 35.8438 17.8752ZM11.5625 33.4705L7.58789 30.2502L11.5625 27.0299V33.4705ZM12.7188 8.87523L23.06 8.87509L23.125 13.3752C23.125 13.8125 23.3847 14.2077 23.7912 14.3948C23.9488 14.4651 24.115 14.5002 24.2812 14.5002C24.5466 14.5002 24.8097 14.4123 25.022 14.2387L31.9595 8.61374C32.2232 8.39711 32.375 8.0807 32.375 7.68695C32.375 7.2932 32.2226 7.03635 31.9595 6.82351L25.022 1.19851C24.6765 0.917263 24.1945 0.860169 23.7913 1.04249C23.3852 1.29189 23.125 1.6874 23.125 2.12453L23.06 6.62523H12.7188C5.70537 6.62523 0 12.1166 0 19.0002C0 19.6221 0.517133 20.1252 1.15625 20.1252C1.79537 20.1252 2.3125 19.619 2.3125 19.0002C2.3125 13.4174 6.98014 8.87523 12.7188 8.87523ZM25.4375 4.5264L29.4121 7.75023L25.4375 10.9705V4.5264Z"
+                    fill="#F61A30" />
+                </svg>
+              </div>
+              <div class="text-wrapper flex-grow text-start">
+                <h5>
+                  <strong>Years of Experience</strong>
+                </h5>
+                <p class="mt-1 mt-sm-2">4+ years of experience in frontend web development
+                </p>
+              </div>
+            </div>
+            <div class="d-flex gap-4 mb-4">
+              <div class="icon-wrapper flex-grow-0">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="40" viewBox="0 0 35 35" width="40">
+                  <path
+                    d="M32.915 0C32.6929 0 32.4792 0.0341797 32.2827 0.102539L12.397 6.66504C11.5391 6.95898 10.9375 7.79297 10.9375 8.75V25.4844C9.77539 24.6094 8.25098 24.0625 6.50098 24.0625C2.87793 24.0625 0 26.5098 0 29.5312C0 32.5527 2.87793 35 6.50098 35C10.124 35 13.002 32.5596 13.002 29.5347L13.125 17.5L32.8125 10.9375V21.1094C31.6504 20.2344 30.126 19.6875 28.376 19.6875C24.7529 19.6875 21.875 22.1313 21.875 25.0947C21.875 28.0581 24.7529 30.502 28.376 30.502C31.999 30.502 34.877 28.0581 34.877 25.0332L35 2.18682C35 0.939258 34.0293 0 32.915 0ZM6.5625 32.8125C4.18701 32.8125 2.1875 31.3701 2.1875 29.5312C2.1875 27.7539 4.18701 26.25 6.5625 26.25C8.93799 26.25 10.9375 27.7539 10.9375 29.5312C10.9375 31.3086 8.94141 32.8125 6.5625 32.8125ZM28.4375 28.4375C26.062 28.4375 24.0625 26.9951 24.0625 25.1562C24.0625 23.4404 26.062 21.875 28.4375 21.875C30.813 21.875 32.8125 23.3789 32.8125 25.1562C32.8125 26.9336 30.8164 28.4375 28.4375 28.4375ZM32.8125 8.62695L13.125 15.1895V8.75H13.0908L32.8125 2.22988V8.62695Z"
+                    fill="#F61A30" />
+                </svg>
+              </div>
+              <div class="text-wrapper flex-grow text-start">
+                <h5>
+                  <strong>Hobbies</strong>
+                </h5>
+                <p class="mt-1 mt-sm-2">Listening to music & bass guitar enthusiast
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <a href="https://www.pianote.com/songs" class="border-pianote song-list d-inline-block mb-2 mb-sm-0">
+        SEE SONGS LIST
+        <i class="fas fa-music" aria-hidden="true"></i>
+      </a> -->
+        <a href="#contact-us" class="get-in-touch d-inline-block">
+          Let's get in touch
+          <i class="fas fa-arrow-down" aria-hidden="true"></i>
+        </a>
+        <!-- <p class="mb-0">
+        <em>Songs included with Pianote+</em>
+      </p> -->
+      </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects px-20 py-40 px-sm-4 py-sm-56 px-xl-24 py-xl-80 text-center">
+      <h2 class="text-center fs-1 text-uppercase fw-bold mb-4">Client Showcases</h2>
+      <div class="projects-grid">
+        <div class="projects-item">
+          <div class="container">
+            <div class="projects-item-col d-flex gap-20">
+              <div class="projects-item-col-head">
+                <div class="business-text">
+                  <span>01. 三徳株式会社</span>
+                </div>
+                <h3>Nara-Santoku</h3>
+              </div>
+              <div class="projects-item-col-body d-flex">
+                <div class="business-content">
+                  <div class="description text-start">
+                    Santoku Co., Ltd is a Japanese company involved in manufacturing and sales of packaging materials.
+                    Their business spans across many kinds of products needing packaging: foods, pharmaceuticals,
+                    electronic components, chemicals, industrial goods, textiles, daily/useful goods, and logistics
+                    materials.
+                  </div>
+                  <a href="https://www.nara-santoku.co.jp/" target="_blank" class="action-btn"> Site Visit</a>
+                  </a>
+                </div>
+                <div class="business-img">
+                  <img src="/src/assets/images/santoku.png" alt="nara santoku website image" class="w-100 img-fluid">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="projects-item">
+          <div class="container">
+            <div class="projects-item-col d-flex gap-20">
+              <div class="projects-item-col-head">
+                <div class="business-text">
+                  <span>02. スリーナイン島野株式会社</span>
+                </div>
+                <h3>Three-Nine Shimano Co., Ltd.</h3>
+              </div>
+              <div class="projects-item-col-body d-flex">
+                <div class="business-content">
+                  <div class="description text-start">
+                    Santoku Co., Ltd is a Japanese company involved in manufacturing and sales of packaging materials.
+                    Their business spans across many kinds of products needing packaging: foods, pharmaceuticals,
+                    electronic components, chemicals, industrial goods, textiles, daily/useful goods, and logistics
+                    materials.
+                  </div>
+                  <a href="https://catalog.999shimano.com/" target="_blank" class=" action-btn btn-chev-right">
+                    Site Visit</a>
+                </div>
+                <div class="business-img">
+                  <img src="/src/assets/images/threenine.png" alt="nara santoku website image" class="w-100 img-fluid">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="projects-item">
+          <div class="container">
+            <div class="projects-item-col d-flex gap-20">
+              <div class="projects-item-col-head">
+                <div class="business-text">
+                  <span>03. Leapers</span>
+                </div>
+                <h3>Leapers Inc.</h3>
+              </div>
+              <div class="projects-item-col-body d-flex">
+                <div class="business-content">
+                  <div class="description text-start">
+                    Leapers, Inc. is a U.S.-based company that makes optics & shooting sports accessories.
+                    Products include scopes, mounts, rings, riflescopes, bipods, receivers, handguards, flashlights,
+                    lasers, IRON SIGHTS, soft goods (bags, cases), tools & accessories.
+                  </div>
+                  <a href="https://leapers.com/" target="_blank" class="action-btn btn-chev-right"> Site Visit</a>
+                  </a>
+                </div>
+                <div class="business-img">
+                  <img src="/src/assets/images/leapers.png" alt="nara santoku website image" class="w-100 img-fluid">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="mt-80 responsive">
+      <div><img src="assets/images/binary-anvil.png" alt="Binary Anvil employees"></div>
+      <div><img src="assets/images/mtech.png" alt="Mtech outing"></div>
+      <div><img src="assets/images/mtech-run.png" alt="Mtech run"></div>
+    </section>
+
+    <footer>
+      <section id="contact-us" class="contact-us-section">
+        <h2 class="mb-0" data-aos="fade-up" data-aos-delay="200">
+          <strong>Your Creative <em>Ideas</em></strong>
+          <strong class="d-block mt-1"><em>Deserve to Shine.</em></strong>
+        </h2>
+      </section>
+
+      <section id="footer-video-section" class="footer-video-section">
+        <video autoplay muted loop playsinline class="banner-video w-100">
+          <source src="./assets/videos/bulb.mp4" type="video/mp4">
+        </video>
+      </section>
+    </footer>
+
+    <!-- Theme Switcher -->
+    <section id="theme-switcher-section" class="theme-switcher-section">
+      <label class="switch">
+        <input id="theme-switcher" class="theme-switcher l" type="checkbox" checked>
+        <span class="slider"></span>
+      </label><br><br>
+    </section>
+  </main>
+</body>
+<!-- JS Mainfile -->
+<script src="assets/js/main.js" type="module"></script>
+
+</html>

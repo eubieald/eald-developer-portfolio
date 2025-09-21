@@ -1,0 +1,75 @@
+html {
+  scroll-padding-top: 20px;
+}
+
+header {
+  background-color: $primary;
+
+  .navbar-brand {
+    background-color: $primary-color;
+    color: $white-color;
+    border-radius: 2px;
+    padding: 10px;
+
+    &:hover {
+      color: $white-color;
+    }
+  }
+}
+
+strong {
+  font-weight: $fontweight-bold;
+}
+
+.nav-link {
+  font-weight: $font-weight-bold;
+  text-transform: uppercase;
+  color: $white-color;
+
+  &:hover {
+    color: $secondary-color;
+  }
+}
+
+.get-in-touch {
+  display: block;
+  width: 100%;
+  border-radius: 50px;
+  color: white;
+  box-shadow: 0 0 7px var(--link_box-shadow-color);
+  font-family: var(--link_font-family);
+  text-decoration: none;
+  text-transform: uppercase;
+  line-height: var(--link_line-height-base);
+
+  & {
+    width: fit-content;
+    margin-top: 30px;
+    border-radius: 32px;
+    background-color: $secondary-color;
+    font-weight: $font-weight-bold;
+    padding: 20px;
+  }
+
+  &:hover {
+    color: $primary-color;
+    background-color: $white-color;
+  }
+}
+
+// Slick Carousel Customization
+.responsive .slick-slide {
+  margin: 0 10px; // adjust gap size
+}
+
+.responsive .slick-list {
+  margin: 0 -10px; // negate the slide margin so alignment stays correct
+}
+
+.responsive img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  border-radius: 8px; // optional, for rounded look
+}
