@@ -19,9 +19,9 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 // Navigation active state toggle
-document.querySelectorAll('li.nav-item .nav-link').forEach(function (navItem) {
+document.querySelectorAll('topnav').forEach(function (navItem) {
   navItem.addEventListener('click', function () {
-    document.querySelectorAll('li.nav-item .nav-link').forEach(function (item) {
+    document.querySelectorAll('topnav > a').forEach(function (item) {
       item.classList.remove('active');
     });
     this.classList.add('active');

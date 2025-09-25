@@ -1,17 +1,16 @@
-// Slick Carousel Customization
 .responsive .slick-slide {
   width: 100%;
-  margin: 0 10px; // adjust gap size
+  margin: 0 10px;
 }
 
 .responsive .slick-list {
-  margin: 0 -10px; // negate the slide margin so alignment stays correct
+  margin: 0 -10px;
 }
 
 .responsive img {
   width: 100%;
-  height: 300px;
+  height: 500px;
   object-fit: cover;
   display: block;
-  border-radius: 8px; // optional, for rounded look
+  border-radius: 8px;
 }

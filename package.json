@@ -5,7 +5,7 @@
   "source": "./src/index.html",
   "browserslist": "> 1%, last 2 versions",
   "scripts": {
-    "dev": "rimraf dist .parcel-cache && parcel serve ./src/index.html --open",
+    "dev": "rimraf dist .parcel-cache && parcel serve ./src/index.html --port 3000",
     "build": "rimraf dist .parcel-cache && parcel build ./src/index.html --dist-dir dist --public-url ./ && open-cli dist/index.html"
   },
   "keywords": [],
@@ -20,7 +20,9 @@
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.5.1",
+    "@popperjs/core": "^2.11.8",
     "bootstrap": "^5.3.2",
+    "emailjs-com": "^3.2.0",
     "jquery": "^3.7.1",
     "jquery-match-height": "^0.7.2",
     "simple-parallax-js": "^6.2.1"

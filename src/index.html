@@ -19,47 +19,20 @@
     href="https://d15lhc6p38kxp4.cloudfront.net/f0a1fa68-d7da-41b1-b549-d7aa82c0793b/favicons/pianote/favicon-32x32.png?v=2018">
   <link rel="icon" type="image/png" sizes="16x16"
     href="https://d15lhc6p38kxp4.cloudfront.net/f0a1fa68-d7da-41b1-b549-d7aa82c0793b/favicons/pianote/favicon-16x16.png?v=2018">
-
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
-
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-  AOS.init();
-</script>
 
 <body>
   <header>
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <div class="container">
-        <!-- Logo / Brand -->
-        <a class="navbar-brand" href="#">Eubie Aluad</a>
-
-        <!-- Toggler for mobile -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
-          aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <!-- Navigation Links -->
-        <div class="collapse navbar-collapse" id="mainNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link active" href="#about-me">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </div>
+    <nav class="topnav" id="topnav">
+      <a href="#about-me" class="active">Home</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#projects">Projects</a>
+      <a href="javascript:void(0);" class="icon">
+        <i class="fa fa-bars"></i>
+      </a>
     </nav>
   </header>
 
-  <!-- <div class="diagonal-design mt-20 mt-sm-40"></div> -->
   <main>
     <section id="about-me" class="about-me px-20 py-40 px-sm-4 py-sm-56 px-xl-24 py-xl-80 text-center">
       <div class="container mx-auto p-0">
@@ -89,7 +62,7 @@
                 </p>
               </div>
             </div>
-            <div class="d-flex gap-4 mb-4">
+            <!-- <div class="d-flex gap-4 mb-4">
               <div class="icon-wrapper flex-grow-0">
                 <svg class="support-icon" xmlns="http://www.w3.org/2000/svg" fill="none" height="40" viewBox="0 0 37 37"
                   width="40">
@@ -105,7 +78,7 @@
                 <p class="mt-1 mt-sm-2">24/7 Online</p>
                 </p>
               </div>
-            </div>
+            </div> -->
             <div class="d-flex gap-4 mb-4">
               <div class="icon-wrapper flex-grow-0">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" height="40" viewBox="0 0 37 37" width="40">
@@ -175,7 +148,7 @@
                     electronic components, chemicals, industrial goods, textiles, daily/useful goods, and logistics
                     materials.
                   </div>
-                  <a href="https://www.nara-santoku.co.jp/" target="_blank" class="action-btn"> Site Visit</a>
+                  <a href="http://www.nara-santoku.co.jp/" target="_blank" class="action-btn"> Site Visit</a>
                   </a>
                 </div>
                 <div class="business-img">
@@ -242,38 +215,71 @@
     </section>
 
     <section id="gallery" class="mt-80 responsive">
-      <div><img src="assets/images/binary-anvil.png" alt="Binary Anvil employees"></div>
-      <div><img src="assets/images/mtech.png" alt="Mtech outing"></div>
-      <div><img src="assets/images/mtech-run.png" alt="Mtech run"></div>
+      <div><img src="assets/images/binary-anvil.png" alt="Binary Anvil employees" class="img-fluid"></div>
+      <div><img src="assets/images/mtech.png" alt="Mtech outing" class="img-fluid"></div>
+      <div><img src="assets/images/mtech-run.png" alt="Mtech run" class="img-fluid"></div>
     </section>
 
-    <footer>
-      <section id="contact-us" class="contact-us-section">
-        <h2 class="mb-0" data-aos="fade-up" data-aos-delay="200">
-          <strong>Your Creative <em>Ideas</em></strong>
-          <strong class="d-block mt-1"><em>Deserve to Shine.</em></strong>
-        </h2>
-        <span class="contact-us-text">“Let’s get in touch and bring your vision to life. Whether you’re starting fresh
-          or refining
-          an existing
-          idea, I’ll help you build creative, modern websites that truly shine. Together, we’ll transform your ideas
-          into a digital experience that reflects your brand and connects with your audience.”</span>
-      </section>
+    <div class="parallax">
+    </div>
 
-      <section id="footer-video-section" class="footer-video-section">
-        <video autoplay muted loop playsinline class="banner-video w-100">
-          <source src="./assets/videos/bulb.mp4" type="video/mp4">
-        </video>
+    <footer>
+      <section class="footer-container d-flex flex-wrap">
+        <section id="contact-us" class="contact-us-section">
+          <h2 class="mb-0">
+            <strong>Your Creative <em>Ideas</em></strong>
+            <strong class="d-block mt-1"><em>Deserve to Shine.</em></strong>
+          </h2>
+          <div>
+            <span class="contact-us-text">
+              “Let’s collaborate to create modern, creative websites that bring your vision
+              to life and connect with your audience.”
+            </span>
+          </div>
+          <form id="contact-us-form" class="contact-us-form">
+            <div class="mb-3">
+              <label for="names" class="form-label">Name</label>
+              <input type="text" class="form-control" id="name" name="name" required />
+            </div>
+
+            <div class="mb-3">
+              <label for="email" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="email" name="email" required />
+              <div id="emailHelp" class="color-white">
+                <i>We'll never share your email with anyone else.</i>
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </section>
+
+        <!-- Video Section -->
+        <!-- <section id="footer-video-section" class="footer-video-section">
+          <video autoplay muted loop playsinline class="footer-video">
+            <source src="./assets/videos/bulb.mp4" type="video/mp4" />
+          </video>
+        </section> -->
+
+        <!-- <section id="footer-video-section" class="footer-video-section">
+          <video autoplay muted loop playsinline class="footer-video">
+            <source src="./assets/videos/bulb.mp4" type="video/mp4" />
+          </video>
+          <div class="video-overlay"></div>
+        </section> -->
       </section>
     </footer>
 
     <!-- Theme Switcher -->
-    <section id="theme-switcher-section" class="theme-switcher-section">
-      <label class="switch">
-        <input id="theme-switcher" class="theme-switcher l" type="checkbox" checked>
-        <span class="slider"></span>
-      </label><br><br>
-    </section>
+    <div id="theme-switcher-section" class="theme-switcher-section">
+      <input id="theme-switcher" class="l" type="checkbox" />
+    </div>
+    </div>
   </main>
 </body>
 <!-- JS Mainfile -->

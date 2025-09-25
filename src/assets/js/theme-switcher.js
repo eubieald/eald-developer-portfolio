@@ -10,7 +10,7 @@ if (storedValue !== null) {
 }
 
 themeSwitcher.addEventListener('change', () => {
-  const isLight = themeSwitcher.checked;  
+  const isLight = themeSwitcher.checked;
   bodyElement.classList.toggle('light-mode', isLight);
   localStorage.setItem('light-mode', isLight);
 });

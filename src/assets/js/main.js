@@ -5,3 +5,6 @@ import 'bootstrap';
 import './misc';
 import './slick-custom';
 import './theme-switcher';
+import './email-service';
+import './contact-us-form';
+import './toggle-nav';  
