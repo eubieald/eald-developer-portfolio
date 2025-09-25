@@ -9,10 +9,18 @@ $(document).ready(function () {
     dots: false,
     infinite: true,
     slidesToShow: 2,
-    slidesToScroll: 1, 
-    autoplay: false,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 0, 
+    speed: 7000,
     cssEase: 'linear',
     arrows: false,
+    pauseOnHover: false, 
+    pauseOnFocus: false, 
+    swipe: false,
+    draggable: false, 
+    touchMove: false, 
+    accessibility: false,
     responsive: [
       {
         breakpoint: 1024,
@@ -36,5 +44,9 @@ $(document).ready(function () {
         },
       },
     ],
+  });
+
+  $(window).on('resize', function () {
+    $('.responsive').slick('slickPlay');
   });
 });
