@@ -2,6 +2,10 @@ body.light-mode {
   --bs-body-bg: $white-color;
   --bs-body-color: $primary-color;
 
+  .topnav a.active {
+    background-color: $white-color;
+  }
+
   .about-me .container {
     color: $secondary-color;
   }
@@ -10,7 +14,7 @@ body.light-mode {
     .action-btn {
       &:hover {
         background-color: $primary-color;
-        color: $white-color;
+        color: $yellow-color;
       }
     }
   }
@@ -29,12 +33,17 @@ body.light-mode {
   .contact-us-section {
     background-color: var(--bs-body-bg);
     color: var(--bs-body-color);
+
+    .contact-us-form > button:hover {
+      background-color: $secondary-color;
+      color: $white-color;
+    }
   }
 }
 
 .theme-switcher-section {
   position: fixed;
-  left: 2%;
+  left: 1%;
   top: 50%;
   transform: rotate(270deg);
 }
@@ -45,9 +54,7 @@ body.light-mode {
   font-size: 1em;
   cursor: pointer;
 
-  background-color: rgba(0, 0, 0, 0.7);
   border-radius: 0.75em;
-  box-shadow: 0.125em 0.125em 0 0.125em rgba(0, 0, 0, 0.3) inset;
   color: #fdea7b;
   display: inline-flex;
   align-items: center;
@@ -103,9 +110,6 @@ body.light-mode {
   }
 
   &:checked {
-    background-color: rgba(0, 0, 0, 0.45);
-    box-shadow: 0.125em 0.125em 0 0.125em rgba(0, 0, 0, 0.1) inset;
-
     &::before {
       background-color: currentColor;
       transform: translateX(125%);

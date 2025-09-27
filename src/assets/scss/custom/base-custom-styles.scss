@@ -26,6 +26,7 @@ header {
 .get-in-touch {
   display: block;
   width: 100%;
+  padding: 15px;
   border-radius: 50px;
   color: white;
   box-shadow: 0 0 7px var(--link_box-shadow-color);
@@ -48,8 +49,6 @@ header {
     background-color: $white-color;
   }
 }
-
-
 
 body {
   margin: 0;
@@ -75,8 +74,8 @@ body {
     }
 
     &.active {
-      background-color: $black-color;
-      color: $yellow-color;
+      background-color: var(--bs-body-bg);
+      color: $secondary-color;
     }
 
     &.icon {
@@ -99,6 +98,17 @@ body {
       text-align: left;
     }
   }
+}
+
+.animate {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 1s ease-out;
+}
+
+.animate.show {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 @media screen and (max-width: 600px) {

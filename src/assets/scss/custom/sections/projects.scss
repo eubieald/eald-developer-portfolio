@@ -35,9 +35,23 @@
   &-item-col {
     flex-direction: column;
 
+    &-head {
+      span {
+        font-weight: $fontweight-regular;
+      }
+
+      h3 {
+        font-weight: $fontweight-bold;
+      }
+    }
+
     &-body {
       flex-direction: column-reverse;
     }
+  }
+
+  .description {
+    padding-top: 20px;
   }
 }
 
@@ -50,7 +64,7 @@
     &-item-col {
       justify-content: center;
       flex-direction: row;
-      gap: 1%;
+      gap: 2%;
 
       &-head {
         width: 38%;
@@ -59,12 +73,16 @@
       &-body {
         width: 100%;
         flex-direction: row;
-        gap: 1%;
+        gap: 2%;
       }
     }
 
     .business-content {
       margin-top: 0;
+
+      .description {
+        padding-top: 0;
+      }
     }
 
     .business-content,

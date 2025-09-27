@@ -27,3 +27,23 @@ document.querySelectorAll('.topnav a:not(.icon)').forEach(function (navItem) {
     this.classList.add('active');
   });
 });
+
+// Intersection Observer on sections
+document.addEventListener('DOMContentLoaded', () => {
+  const observerOptions = {
+    threshold: 0.2, // 30% of section visible
+  };
+
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+        observer.unobserve(entry.target); // animate only once
+      }
+    });
+  }, observerOptions);
+
+  document.querySelectorAll('section.animate').forEach((section) => {
+    observer.observe(section);
+  });
+});

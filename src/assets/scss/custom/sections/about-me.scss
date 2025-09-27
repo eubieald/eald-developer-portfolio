@@ -30,36 +30,6 @@ section {
       }
     }
 
-    .border-pianote {
-      display: block;
-      width: 100%;
-      border-radius: 50px;
-      color: white;
-      box-shadow: 0 0 7px var(--link_box-shadow-color);
-      font-family: var(--link_font-family);
-      text-decoration: none;
-      text-transform: uppercase;
-      line-height: var(--link_line-height-base);
-
-      &.song-list {
-        border: 1px solid var(--primary-color);
-        color: var(--primary-color);
-
-        &:hover {
-          background-color: white;
-        }
-      }
-
-      &:not(.song-list) {
-        background-color: var(--primary-color);
-
-        &:hover {
-          color: white;
-          background-color: var(--link_secondary-hover-color);
-        }
-      }
-    }
-
     p > em {
       color: var(--secondary-color);
     }
@@ -67,7 +37,7 @@ section {
 
   &#gallery {
     background-color: $black-color;
-    padding: 50px 0
+    padding: 50px 0;
   }
 }
 
@@ -97,8 +67,6 @@ section {
       }
 
       .icon-text-column {
-        max-width: 328px;
-
         .icon-wrapper {
           width: 100%;
           max-width: 56px;

@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Parcel / Bootstrap Boilerplate</title>
+  <title>Eubie Aluad | Portfolio</title>
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,17 +13,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
   <link rel="stylesheet" href="./assets/scss/main.scss">
-
-  <!-- add tab icon -->
-  <link rel="icon" type="image/png" sizes="32x32"
-    href="https://d15lhc6p38kxp4.cloudfront.net/f0a1fa68-d7da-41b1-b549-d7aa82c0793b/favicons/pianote/favicon-32x32.png?v=2018">
-  <link rel="icon" type="image/png" sizes="16x16"
-    href="https://d15lhc6p38kxp4.cloudfront.net/f0a1fa68-d7da-41b1-b549-d7aa82c0793b/favicons/pianote/favicon-16x16.png?v=2018">
 </head>
 
 <body>
   <header>
-    <nav class="topnav" id="topnav">
+    <nav class="topnav fw-bold text-uppercase" id="topnav">
       <a href="#about-me" class="active">Eubie</a>
       <a href="#gallery">Gallery</a>
       <a href="#projects">Projects</a>
@@ -34,7 +28,7 @@
   </header>
 
   <main>
-    <section id="about-me" class="about-me px-20 py-40 px-sm-4 py-sm-56 px-xl-24 py-xl-80 text-center">
+    <section id="about-me" class="about-me px-20 py-40 px-sm-4 py-sm-56 px-xl-24 py-xl-80 text-center animate">
       <div class="container mx-auto p-0">
         <h2 class="mb-0">
           <strong>Hey there! 👋 I'm Eubie,</strong>
@@ -111,42 +105,15 @@
       </div>
     </section>
 
-    <section id="projects" class="projects px-20 py-40 px-sm-4 py-sm-56 px-xl-24 py-xl-80 text-center">
+    <section id="projects" class="projects px-20 py-40 px-sm-4 py-sm-56 px-xl-24 py-xl-80 text-center animate">
       <h2 class="text-center fs-1 text-uppercase fw-bold mb-4">Client Showcases</h2>
       <div class="projects-grid">
         <div class="projects-item">
           <div class="container">
             <div class="projects-item-col d-flex gap-20">
-              <div class="projects-item-col-head">
+              <div class="projects-item-col-head fw-bold">
                 <div class="business-text">
-                  <span>01. 三徳株式会社</span>
-                </div>
-                <h3>Nara-Santoku</h3>
-              </div>
-              <div class="projects-item-col-body d-flex">
-                <div class="business-content">
-                  <div class="description text-start">
-                    Santoku Co., Ltd is a Japanese company involved in manufacturing and sales of packaging materials.
-                    Their business spans across many kinds of products needing packaging: foods, pharmaceuticals,
-                    electronic components, chemicals, industrial goods, textiles, daily/useful goods, and logistics
-                    materials.
-                  </div>
-                  <a href="http://www.nara-santoku.co.jp/" target="_blank" class="action-btn"> Site Visit</a>
-                  </a>
-                </div>
-                <div class="business-img">
-                  <img src="/src/assets/images/santoku.png" alt="nara santoku website image" class="w-100 img-fluid">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="projects-item">
-          <div class="container">
-            <div class="projects-item-col d-flex gap-20">
-              <div class="projects-item-col-head">
-                <div class="business-text">
-                  <span>02. スリーナイン島野株式会社</span>
+                  <span>01. Next JS</span>
                 </div>
                 <h3>Three-Nine Shimano Co., Ltd.</h3>
               </div>
@@ -173,7 +140,34 @@
             <div class="projects-item-col d-flex gap-20">
               <div class="projects-item-col-head">
                 <div class="business-text">
-                  <span>03. Leapers</span>
+                  <span>02. Wordpress</span>
+                </div>
+                <h3>Nara-Santoku</h3>
+              </div>
+              <div class="projects-item-col-body d-flex">
+                <div class="business-content">
+                  <div class="description text-start">
+                    Santoku Co., Ltd is a Japanese company involved in manufacturing and sales of packaging materials.
+                    Their business spans across many kinds of products needing packaging: foods, pharmaceuticals,
+                    electronic components, chemicals, industrial goods, textiles, daily/useful goods, and logistics
+                    materials.
+                  </div>
+                  <a href="http://www.nara-santoku.co.jp/" target="_blank" class="action-btn"> Site Visit</a>
+                  </a>
+                </div>
+                <div class="business-img">
+                  <img src="/src/assets/images/santoku.png" alt="nara santoku website image" class="w-100 img-fluid">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="projects-item">
+          <div class="container">
+            <div class="projects-item-col d-flex gap-20">
+              <div class="projects-item-col-head">
+                <div class="business-text">
+                  <span>03. Magento E - Commerce</span>
                 </div>
                 <h3>Leapers Inc.</h3>
               </div>
@@ -197,7 +191,7 @@
       </div>
     </section>
 
-    <section id="gallery" class="mt-80 responsive">
+    <section id="gallery" class="mt-80 responsive animate">
       <div><img src="assets/images/binary-anvil.png" alt="Binary Anvil employees" class="img-fluid"></div>
       <div><img src="assets/images/mtech.png" alt="Mtech outing" class="img-fluid"></div>
       <div><img src="assets/images/mtech-run.png" alt="Mtech run" class="img-fluid"></div>
@@ -205,14 +199,14 @@
 
     <div class="parallax">
       <a href="/src/assets/pdf/cv.pdf" class="resume-btn" download>
-        Download Resume
+        Download Resume / CV
       </a>
     </div>
 
 
     <footer>
       <section class="footer-container d-flex flex-wrap">
-        <section id="contact-us" class="contact-us-section">
+        <section id="contact-us" class="contact-us-section animate">
           <h2 class="mb-0">
             <strong>Your Creative <em>Ideas</em></strong>
             <strong class="d-block mt-1"><em>Deserve to Shine.</em></strong>
@@ -225,8 +219,9 @@
           </div>
           <form id="contact-us-form" class="contact-us-form">
             <div class="mb-3">
-              <label for="names" class="form-label">Name</label>
-              <input type="text" class="form-control" id="name" name="name" required />
+              <label for="name" class="form-label">Name</label>
+              <input type="text" title="Only letters allowed, must start with a letter" pattern="[A-Za-z][A-Za-z\s]*"
+                class="form-control" id="name" name="name" required />
             </div>
 
             <div class="mb-3">
