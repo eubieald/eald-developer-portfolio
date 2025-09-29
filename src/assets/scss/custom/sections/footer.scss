@@ -87,6 +87,11 @@ footer {
     > button {
       background-color: $yellow-color;
       color: black;
+
+      &:hover {
+        background-color: $secondary-color;
+        color: $white-color;
+      }
     }
   }
 }

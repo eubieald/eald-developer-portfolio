@@ -39,6 +39,12 @@
       flex-direction: column-reverse;
     }
   }
+
+  .business-content {
+      .description {
+        padding-top: 20px;
+      }
+    }
 }
 
 @include media-breakpoint-up(md) {
@@ -59,12 +65,16 @@
       &-body {
         width: 100%;
         flex-direction: row;
-        gap: 1%;
+        gap: 2%;
       }
     }
 
     .business-content {
       margin-top: 0;
+
+      .description {
+        padding-top: 0;
+      }
     }
 
     .business-content,

@@ -8,3 +8,7 @@ import './theme-switcher';
 import './email-service';
 import './contact-us-form';
 import './toggle-nav';  
+
+// Libs
+import './libs/horizontal-timeline-master/main';
+import './libs/horizontal-timeline-master/custom';

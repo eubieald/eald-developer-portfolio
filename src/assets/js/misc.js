@@ -27,3 +27,27 @@ document.querySelectorAll('.topnav a:not(.icon)').forEach(function (navItem) {
     this.classList.add('active');
   });
 });
+
+// Intersection Observer
+document.addEventListener('DOMContentLoaded', () => {
+  const animatedElements = document.querySelectorAll('.animate');
+
+  const observerOptions = {
+    root: null,
+    threshold: 0.2,
+  }
+
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('animate-active');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, observerOptions);
+
+  animatedElements.forEach(el => {
+    observer.observe(el);
+  });
+});
+

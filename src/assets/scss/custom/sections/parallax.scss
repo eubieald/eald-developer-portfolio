@@ -1,6 +1,6 @@
 .parallax {
   background-image: url('/src/assets/gif/it.gif');
-  height: 100vh;
+  height: 70vh;
 
   background-attachment: fixed;
   background-position: center;
@@ -27,4 +27,10 @@
 .resume-btn:hover {
   background: #f61a30;
   transform: translateY(-3px);
+}
+
+@include media-breakpoint-up(lg) {
+  .parallax {
+    height: 100vh;
+  }
 }

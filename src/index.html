@@ -23,7 +23,7 @@
 
 <body>
   <header>
-    <nav class="topnav" id="topnav">
+    <nav class="topnav text-uppercase fw-bold" id="topnav">
       <a href="#about-me" class="active">Eubie</a>
       <a href="#gallery">Gallery</a>
       <a href="#projects">Projects</a>
@@ -34,7 +34,7 @@
   </header>
 
   <main>
-    <section id="about-me" class="about-me px-20 py-40 px-sm-4 py-sm-56 px-xl-24 py-xl-80 text-center">
+    <section id="about-me" class="about-me px-20 py-40 px-sm-4 py-sm-56 px-xl-24 py-xl-80 text-center animate">
       <div class="container mx-auto p-0">
         <h2 class="mb-0">
           <strong>Hey there! 👋 I'm Eubie,</strong>
@@ -111,7 +111,84 @@
       </div>
     </section>
 
-    <section id="projects" class="projects px-20 py-40 px-sm-4 py-sm-56 px-xl-24 py-xl-80 text-center">
+    <section id="career-timeline" class="timeline-container container my-5 animate" animate>
+      <div class="timeline"> <button class="timeline-btn prev" disabled>←</button>
+        <div class="timeline-track">
+          <ul class="timeline-years">
+            <li data-year="2017" class="active">2017</li>
+            <li data-year="2019">2019</li>
+            <li data-year="2020">2020</li>
+            <li data-year="2023">2023</li>
+            <li data-year="2024">2024</li>
+            <li data-year="2025">2025</li>
+          </ul>
+        </div> <button class="timeline-btn next">→</button>
+      </div>
+      <div class="timeline-content mt-4">
+        <div class="timeline-items-wrapper">
+          <div class="timeline-item active" data-year="2017">
+            <h3>Magento Junior-Level Developer</h3>
+            <h5>May 2017 – Aug 2019 • Bacolod City, Philippines</h5>
+            <p><strong>Binary Anvil Inc</strong> – Entry point of my Web Developer career where I gained hands-on
+              experience in Magento architecture, Basics of (PHP &
+              MySQL )</p>
+          </div>
+          <div class="timeline-item" data-year="2019">
+            <h3>Magento Mid-Level Developer</h3>
+            <h5>Aug 2019 – Feb 2020 • Bacolod City, Philippines</h5>
+            <p><strong>Above The Fray Design, Inc</strong> – Assisted the Senior Backend Developer in building and
+              customizing Magento e-commerce websites,
+              ensuring functionality and alignment with client requirements.
+              Extended and enhanced Magento core features within the admin panel to improve usability and meet
+              business needs.
+              Collaborated with frontend developers to ensure seamless integration between backend logic and
+              user-facing components</p>
+          </div>
+          <div class="timeline-item" data-year="2020">
+            <h3>Junior Frontend Web Developer</h3>
+            <h5>May 2020 – May 2023 • Bacolod City, Philippines</h5>
+            <p><strong>Binary Anvil East Inc</strong> – For the first two years, I was assigned to the Support Team,
+              where I maintained Magento e-commerce
+              websites and resolved production bugs and technical issues.
+              Transitioned to New Builds Department to develop Magento 2 E-Commerce websites using Magento
+              Page builder, CSS preprocessors (LESS), XML, HTML, PHTML, JS, JQUERY.</p>
+          </div>
+          <div class="timeline-item" data-year="2023">
+            <h3>Support Developer</h3>
+            <h5>Jul 2023 – Nov 2023 • Bacolod City, Philippines</h5>
+            <p><strong>DevTeam</strong> – Responded to client inquiries regarding inventory, order statuses, and system
+              issues through Intercom,
+              ensuring timely and accurate communication.
+              Collaborated with internal teams to escalate and resolve complex cases, ensuring minimal business
+              disruption for clients.
+              Documented solutions, RCA findings, and best practices to enhance the knowledge base and improve
+              support efficiency.
+              Utilized tools such as Postman and DataDog for debugging and log analysis.
+            </p>
+          </div>
+          <div class="timeline-item" data-year="2024">
+            <h3>Mid-Level Frontend Developer</h3>
+            <h5>Apr 2024 – Aug 2025 • Cebu City, Philippines</h5>
+            <p><strong>Mtech Labs Inc</strong> – Initially was hired to develop and maintain WordPress websites,
+              delivering responsive, SEO-friendly, and customized solutions
+              tailored to client needs.
+              Transitioned into React development, building modern and
+              scalable web applications using React, Next.js, Zustand, React
+              Hook Form, and NextAuth.
+              Utilized tools such as Postman for API testing and debugging, and
+              collaborated with product/design teams using Figma and Adobe
+              XD to clarify requirements and improve customer-facing
+              experiences.</p>
+          </div>
+          <div class="timeline-item" data-year="2025">
+            <h3>Software Engr. 1 Trainee</h3>
+            <h5>September 2025 - (Present) • Makati City, Philippines</h5>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects px-20 py-40 px-sm-4 py-sm-56 px-xl-24 py-xl-80 text-center animate">
       <h2 class="text-center fs-1 text-uppercase fw-bold mb-4">Client Showcases</h2>
       <div class="projects-grid">
         <div class="projects-item">
@@ -197,7 +274,7 @@
       </div>
     </section>
 
-    <section id="gallery" class="mt-80 responsive">
+    <section id="gallery" class="mt-80 responsive animate">
       <div><img src="assets/images/binary-anvil.png" alt="Binary Anvil employees" class="img-fluid"></div>
       <div><img src="assets/images/mtech.png" alt="Mtech outing" class="img-fluid"></div>
       <div><img src="assets/images/mtech-run.png" alt="Mtech run" class="img-fluid"></div>
@@ -211,7 +288,7 @@
 
 
     <footer>
-      <section class="footer-container d-flex flex-wrap">
+      <section class="footer-container d-flex flex-wrap animate">
         <section id="contact-us" class="contact-us-section">
           <h2 class="mb-0">
             <strong>Your Creative <em>Ideas</em></strong>
@@ -225,7 +302,7 @@
           </div>
           <form id="contact-us-form" class="contact-us-form">
             <div class="mb-3">
-              <label for="names" class="form-label">Name</label>
+              <label for="name" class="form-label">Name</label>
               <input type="text" class="form-control" id="name" name="name" required />
             </div>
 
