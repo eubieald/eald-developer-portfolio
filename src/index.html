@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Parcel / Bootstrap Boilerplate</title>
+  <title>Eubie | Portfolio</title>
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,13 +23,13 @@
 
 <body>
   <header>
-    <nav class="topnav text-uppercase fw-bold" id="topnav">
+    <nav class="topnav text-uppercase fw-bold" id="myTopnav">
       <a href="#about-me" class="active">Eubie</a>
       <a href="#gallery">Gallery</a>
       <a href="#projects">Projects</a>
-      <a href="javascript:void(0);" class="icon">
-        <i class="fa fa-bars"></i>
-      </a>
+       <a href="javascript:void(0);" class="icon" id="navToggle">
+      <i class="fa fa-bars"></i>
+    </a>
     </nav>
   </header>
 
@@ -96,18 +96,12 @@
             </div>
           </div>
         </div>
-        <!-- <a href="https://www.pianote.com/songs" class="border-pianote song-list d-inline-block mb-2 mb-sm-0">
-        SEE SONGS LIST
-        <i class="fas fa-music" aria-hidden="true"></i>
-      </a> -->
+
         <a href="#contact-us" class="get-in-touch d-inline-block">
           Let's get in touch
           <i class="fas fa-arrow-down" aria-hidden="true"></i>
         </a>
-        <!-- <p class="mb-0">
-        <em>Songs included with Pianote+</em>
-      </p> -->
-      </div>
+
       </div>
     </section>
 
@@ -115,59 +109,24 @@
       <div class="timeline"> <button class="timeline-btn prev" disabled>←</button>
         <div class="timeline-track">
           <ul class="timeline-years">
-            <li data-year="2017" class="active">2017</li>
-            <li data-year="2019">2019</li>
-            <li data-year="2020">2020</li>
-            <li data-year="2023">2023</li>
+            <li data-year="2025" class="active">2025</li>
             <li data-year="2024">2024</li>
-            <li data-year="2025">2025</li>
+            <li data-year="2023">2023</li>
+            <li data-year="2020">2020</li>
+            <li data-year="2019">2019</li>
+            <li data-year="2017">2017</li>
           </ul>
         </div> <button class="timeline-btn next">→</button>
       </div>
       <div class="timeline-content mt-4">
         <div class="timeline-items-wrapper">
-          <div class="timeline-item active" data-year="2017">
-            <h3>Magento Junior-Level Developer</h3>
-            <h5>May 2017 – Aug 2019 • Bacolod City, Philippines</h5>
-            <p><strong>Binary Anvil Inc</strong> – Entry point of my Web Developer career where I gained hands-on
-              experience in Magento architecture, Basics of (PHP &
-              MySQL )</p>
-          </div>
-          <div class="timeline-item" data-year="2019">
-            <h3>Magento Mid-Level Developer</h3>
-            <h5>Aug 2019 – Feb 2020 • Bacolod City, Philippines</h5>
-            <p><strong>Above The Fray Design, Inc</strong> – Assisted the Senior Backend Developer in building and
-              customizing Magento e-commerce websites,
-              ensuring functionality and alignment with client requirements.
-              Extended and enhanced Magento core features within the admin panel to improve usability and meet
-              business needs.
-              Collaborated with frontend developers to ensure seamless integration between backend logic and
-              user-facing components</p>
-          </div>
-          <div class="timeline-item" data-year="2020">
-            <h3>Junior Frontend Web Developer</h3>
-            <h5>May 2020 – May 2023 • Bacolod City, Philippines</h5>
-            <p><strong>Binary Anvil East Inc</strong> – For the first two years, I was assigned to the Support Team,
-              where I maintained Magento e-commerce
-              websites and resolved production bugs and technical issues.
-              Transitioned to New Builds Department to develop Magento 2 E-Commerce websites using Magento
-              Page builder, CSS preprocessors (LESS), XML, HTML, PHTML, JS, JQUERY.</p>
-          </div>
-          <div class="timeline-item" data-year="2023">
-            <h3>Support Developer</h3>
-            <h5>Jul 2023 – Nov 2023 • Bacolod City, Philippines</h5>
-            <p><strong>DevTeam</strong> – Responded to client inquiries regarding inventory, order statuses, and system
-              issues through Intercom,
-              ensuring timely and accurate communication.
-              Collaborated with internal teams to escalate and resolve complex cases, ensuring minimal business
-              disruption for clients.
-              Documented solutions, RCA findings, and best practices to enhance the knowledge base and improve
-              support efficiency.
-              Utilized tools such as Postman and DataDog for debugging and log analysis.
-            </p>
+          <div class="timeline-item active" data-year="2025">
+            <h3 class="fw-bold">Software Developer I Trainee</h3>
+            <h5>September 2025 - (Present) • Makati City, Philippines</h5>
+            <p><strong>Systems and Software Consulting Group Inc.</strong> – Bootcam Training</p>
           </div>
           <div class="timeline-item" data-year="2024">
-            <h3>Mid-Level Frontend Developer</h3>
+            <h3 class="fw-bold">Mid-Level Frontend Developer</h3>
             <h5>Apr 2024 – Aug 2025 • Cebu City, Philippines</h5>
             <p><strong>Mtech Labs Inc</strong> – Initially was hired to develop and maintain WordPress websites,
               delivering responsive, SEO-friendly, and customized solutions
@@ -180,9 +139,45 @@
               XD to clarify requirements and improve customer-facing
               experiences.</p>
           </div>
-          <div class="timeline-item" data-year="2025">
-            <h3>Software Engr. 1 Trainee</h3>
-            <h5>September 2025 - (Present) • Makati City, Philippines</h5>
+          <div class="timeline-item" data-year="2023">
+            <h3 class="fw-bold">Support Developer</h3>
+            <h5>Jul 2023 – Nov 2023 • Bacolod City, Philippines</h5>
+            <p><strong>DevTeam</strong> – Responded to client inquiries regarding inventory, order statuses, and system
+              issues through Intercom,
+              ensuring timely and accurate communication.
+              Collaborated with internal teams to escalate and resolve complex cases, ensuring minimal business
+              disruption for clients.
+              Documented solutions, RCA findings, and best practices to enhance the knowledge base and improve
+              support efficiency.
+              Utilized tools such as Postman and DataDog for debugging and log analysis.
+            </p>
+          </div>
+          <div class="timeline-item" data-year="2020">
+            <h3 class="fw-bold">Magento Frontend Web Developer</h3>
+            <h5>May 2020 – May 2023 • Bacolod City, Philippines</h5>
+            <p><strong>Binary Anvil East Inc</strong> – For the first two years, I was assigned to the Support Team,
+              where I maintained Magento e-commerce
+              websites and resolved production bugs and technical issues.
+              Transitioned to New Builds Department to develop Magento 2 E-Commerce websites using Magento
+              Page builder, CSS preprocessors (LESS), XML, HTML, PHTML, JS, JQUERY.</p>
+          </div>
+          <div class="timeline-item" data-year="2019">
+            <h3 class="fw-bold">Magento Mid-Level Developer</h3>
+            <h5>Aug 2019 – Feb 2020 • Bacolod City, Philippines</h5>
+            <p><strong>Above The Fray Design, Inc</strong> – Assisted the Senior Backend Developer in building and
+              customizing Magento e-commerce websites,
+              ensuring functionality and alignment with client requirements.
+              Extended and enhanced Magento core features within the admin panel to improve usability and meet
+              business needs.
+              Collaborated with frontend developers to ensure seamless integration between backend logic and
+              user-facing components</p>
+          </div>
+          <div class="timeline-item" data-year="2017">
+            <h3 class="fw-bold">Magento Junior-Level Developer</h3>
+            <h5>May 2017 – Aug 2019 • Bacolod City, Philippines</h5>
+            <p><strong>Binary Anvil Inc</strong> – Entry point of my Web Developer career where I gained hands-on
+              experience in Magento architecture, Basics of (PHP &
+              MySQL )</p>
           </div>
         </div>
       </div>
@@ -191,12 +186,45 @@
     <section id="projects" class="projects px-20 py-40 px-sm-4 py-sm-56 px-xl-24 py-xl-80 text-center animate">
       <h2 class="text-center fs-1 text-uppercase fw-bold mb-4">Client Showcases</h2>
       <div class="projects-grid">
+
+        <!-- 01. Next JS -->
         <div class="projects-item">
           <div class="container">
             <div class="projects-item-col d-flex gap-20">
               <div class="projects-item-col-head">
                 <div class="business-text">
-                  <span>01. 三徳株式会社</span>
+                  <span class="fw-bold">01. Next JS (React)</span>
+                </div>
+                <h3>Three-Nine Shimano Co., Ltd.</h3>
+              </div>
+              <div class="projects-item-col-body d-flex">
+                <div class="business-content">
+                  <div class="description text-start">
+                    Three-Nine Shimano Co., Ltd. is a Japanese company engaged in the design, manufacturing, and sales
+                    of architectural and decorative hardware.
+                    Their business spans a wide range of metal components including fittings for furniture, showcases,
+                    glass installations, and custom architectural elements.
+                    They specialize in precision metal processing, custom fabrication, and small-lot production—offering
+                    high-quality, original products for retail, commercial, and interior applications. </div>
+                  <a href="https://catalog.999shimano.com/" target="_blank" class="action-btn btn-chev-right">
+                    Site Visit</a>
+                </div>
+                <div class="business-img">
+                  <img src="/src/assets/images/threenine.png" alt="three nine shimano website image"
+                    class="w-100 img-fluid">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 02. WordPress -->
+        <div class="projects-item">
+          <div class="container">
+            <div class="projects-item-col d-flex gap-20">
+              <div class="projects-item-col-head">
+                <div class="business-text">
+                  <span class="fw-bold">02. Wordpress</span>
                 </div>
                 <h3>Nara-Santoku</h3>
               </div>
@@ -209,7 +237,6 @@
                     materials.
                   </div>
                   <a href="http://www.nara-santoku.co.jp/" target="_blank" class="action-btn"> Site Visit</a>
-                  </a>
                 </div>
                 <div class="business-img">
                   <img src="/src/assets/images/santoku.png" alt="nara santoku website image" class="w-100 img-fluid">
@@ -218,39 +245,14 @@
             </div>
           </div>
         </div>
+
+        <!-- 03. Magento -->
         <div class="projects-item">
           <div class="container">
             <div class="projects-item-col d-flex gap-20">
               <div class="projects-item-col-head">
                 <div class="business-text">
-                  <span>02. スリーナイン島野株式会社</span>
-                </div>
-                <h3>Three-Nine Shimano Co., Ltd.</h3>
-              </div>
-              <div class="projects-item-col-body d-flex">
-                <div class="business-content">
-                  <div class="description text-start">
-                    Santoku Co., Ltd is a Japanese company involved in manufacturing and sales of packaging materials.
-                    Their business spans across many kinds of products needing packaging: foods, pharmaceuticals,
-                    electronic components, chemicals, industrial goods, textiles, daily/useful goods, and logistics
-                    materials.
-                  </div>
-                  <a href="https://catalog.999shimano.com/" target="_blank" class=" action-btn btn-chev-right">
-                    Site Visit</a>
-                </div>
-                <div class="business-img">
-                  <img src="/src/assets/images/threenine.png" alt="nara santoku website image" class="w-100 img-fluid">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="projects-item">
-          <div class="container">
-            <div class="projects-item-col d-flex gap-20">
-              <div class="projects-item-col-head">
-                <div class="business-text">
-                  <span>03. Leapers</span>
+                  <span class="fw-bold">03. Magento</span>
                 </div>
                 <h3>Leapers Inc.</h3>
               </div>
@@ -262,19 +264,20 @@
                     lasers, IRON SIGHTS, soft goods (bags, cases), tools & accessories.
                   </div>
                   <a href="https://leapers.com/" target="_blank" class="action-btn btn-chev-right"> Site Visit</a>
-                  </a>
                 </div>
                 <div class="business-img">
-                  <img src="/src/assets/images/leapers.png" alt="nara santoku website image" class="w-100 img-fluid">
+                  <img src="/src/assets/images/leapers.png" alt="leapers website image" class="w-100 img-fluid">
                 </div>
               </div>
             </div>
           </div>
         </div>
+
       </div>
     </section>
 
-    <section id="gallery" class="mt-80 responsive animate">
+
+    <section id="gallery" class="responsive overflow-hidden animate">
       <div><img src="assets/images/binary-anvil.png" alt="Binary Anvil employees" class="img-fluid"></div>
       <div><img src="assets/images/mtech.png" alt="Mtech outing" class="img-fluid"></div>
       <div><img src="assets/images/mtech-run.png" alt="Mtech run" class="img-fluid"></div>
@@ -285,7 +288,6 @@
         Download Resume
       </a>
     </div>
-
 
     <footer>
       <section class="footer-container d-flex flex-wrap animate">
@@ -303,7 +305,9 @@
           <form id="contact-us-form" class="contact-us-form">
             <div class="mb-3">
               <label for="name" class="form-label">Name</label>
-              <input type="text" class="form-control" id="name" name="name" required />
+              <input type="text" class="form-control" id="name" name="name" required
+                pattern="^[A-Za-z]+(?: [A-Za-z]\.)?(?: [A-Za-z]+)*$"
+                title="Only letters allowed. Middle initial can use a dot (e.g., Monkey D. Luffy)" />
             </div>
 
             <div class="mb-3">
@@ -322,20 +326,6 @@
             <button type="submit" class="btn btn-primary">Submit</button>
           </form>
         </section>
-
-        <!-- Video Section -->
-        <!-- <section id="footer-video-section" class="footer-video-section">
-          <video autoplay muted loop playsinline class="footer-video">
-            <source src="./assets/videos/bulb.mp4" type="video/mp4" />
-          </video>
-        </section> -->
-
-        <!-- <section id="footer-video-section" class="footer-video-section">
-          <video autoplay muted loop playsinline class="footer-video">
-            <source src="./assets/videos/bulb.mp4" type="video/mp4" />
-          </video>
-          <div class="video-overlay"></div>
-        </section> -->
       </section>
       <div class="footer-bottom text-center py-3 mt-4">
         <p class="mb-0">
@@ -345,10 +335,31 @@
     </footer>
 
     <!-- Theme Switcher -->
-    <div id="theme-switcher-section" class="theme-switcher-section">
+    <!-- <div id="theme-switcher-section" class="theme-switcher-section">
       <input id="theme-switcher" class="l" type="checkbox" />
+    </div> -->
+
+    <!-- From Uiverse.io by pandey_saurav_ -->
+    <!-- From Uiverse.io by pandey_saurav_ -->
+    <div>
+      <input id="theme-switcher" type="checkbox" />
+      <label class="switch" for="theme-switcher">
+        <svg xml:space="preserve" style="enable-background:new 0 0 128 128" viewBox="0 0 128 128" height="3em"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M77.547 120.684h-5.765l-1.698 3.012a7.477 7.477 0 0 1-6.513 3.804h-.003a7.479 7.479 0 0 1-6.513-3.804l-1.698-3.012h-5.765v-4.06h27.956v4.06z"
+            style="fill:#51514c"></path>
+          <path
+            d="M77.547 113.65H49.591v-4.279h27.956v4.279zm0-11.711H49.591v4.279h27.956v-4.279zm38.587-32.576-12.209-3.271.92-3.434 12.209 3.271-.92 3.434zm-104.268 0-.92-3.434 12.209-3.271.92 3.434-12.209 3.271zm92.979-24.913-.92-3.434 12.209-3.272.92 3.434-12.209 3.272zm-81.69 0-12.209-3.272.92-3.434 12.209 3.272-.92 3.434zM94.82 25.247l-2.514-2.514 8.938-8.938 2.514 2.514-8.938 8.938zm-61.64 0-8.937-8.938 2.514-2.514 8.937 8.938-2.514 2.514zm43.358-11.618-3.434-.92L76.376.5l3.434.92-3.272 12.209zm-25.076 0L48.191 1.42 51.625.5l3.272 12.209-3.435.92z"
+            style="fill:#a7a79b"></path>
+          <path
+            d="M59.802 64.141h7.535v34.934h-7.535V64.141zm3.767-44.754c-18.485-.53-33.631 14.817-33.631 33.824 0 9.781 4.016 18.581 10.431 24.753 5.637 5.423 9.222 13.147 9.222 21.111h7.84V64.141H51.75c-4.44 0-8.051-3.612-8.051-8.051s3.612-8.051 8.051-8.051 8.052 3.612 8.052 8.051v5.681h7.535V56.09c0-4.44 3.612-8.051 8.052-8.051 4.44 0 8.051 3.612 8.051 8.051s-3.612 8.051-8.051 8.051h-5.682v34.934h7.84c0-7.964 3.584-15.688 9.222-21.111C93.184 71.792 97.2 62.992 97.2 53.211c0-19.008-15.146-34.355-33.631-33.824zM51.75 50.408a5.687 5.687 0 0 0-5.681 5.681 5.687 5.687 0 0 0 5.681 5.681h5.682v-5.681a5.688 5.688 0 0 0-5.682-5.681zM75.389 61.77h-5.682v-5.681a5.688 5.688 0 0 1 5.682-5.681 5.687 5.687 0 0 1 5.681 5.681 5.687 5.687 0 0 1-5.681 5.681z"
+            style="fill:#ffffff"></path>
+        </svg>
+      </label>
     </div>
-    </div>
+
+
   </main>
 </body>
 <!-- JS Mainfile -->
