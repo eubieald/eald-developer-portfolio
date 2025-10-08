@@ -1,0 +1,102 @@
+.timeline-container {
+  max-width: 900px;
+  padding: 0 24px;
+}
+
+.timeline {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  .timeline-btn {
+    background: var(--bs-primary);
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s ease;
+
+    &:disabled {
+      opacity: 0.4;
+      cursor: not-allowed;
+    }
+
+    &:hover:not(:disabled) {
+      background: $grey-color;
+    }
+  }
+
+  .timeline-track {
+    margin: 0 15px;
+    overflow-x: auto; // enable horizontal scroll
+    scrollbar-width: none; // Firefox
+    -ms-overflow-style: none; // IE/Edge
+    scroll-behavior: smooth;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    .timeline-years {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+      padding: 0;
+      scroll-snap-type: x mandatory;
+
+      li {
+        font-weight: 500;
+        cursor: pointer;
+        position: relative;
+        flex: 0 0 auto; // don't shrink
+        scroll-snap-align: start;
+        transition: color 0.3s ease;
+
+        &::after {
+          content: '';
+          display: block;
+          height: 4px;
+          width: 100%;
+          background: #ccc; // default line
+          position: absolute;
+          bottom: -8px;
+          left: 0;
+          transition: background 0.3s ease;
+        }
+
+        &.active {
+          color: $secondary-color;
+          font-weight: 700;
+
+          &::after {
+            background: $yellow-color; // highlight line
+          }
+        }
+      }
+    }
+  }
+}
+
+.timeline-content {
+  .timeline-item {
+    display: none;
+
+    &.active {
+      display: block;
+      animation: fadeInUp 0.4s ease both;
+    }
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

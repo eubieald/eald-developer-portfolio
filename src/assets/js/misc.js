@@ -1,49 +1,78 @@
-// Import jQuery
 import $ from 'jquery';
 import 'jquery-match-height';
 
-// Add a body class once page has loaded
-(function () {
-  // Add a body class once page has loaded
-  // Used to add CSS transitions to elems
-  // and avoids content shifting during page load
-  window.addEventListener('load', function () {
-    document.body.classList.add('page-loaded');
-  });
-})();
-
-// Equal height for elements with class .icon-wrapper and .text-title
 document.addEventListener('DOMContentLoaded', function () {
   $('.icon-wrapper').matchHeight();
   $('.text-title').matchHeight();
-});
 
-// Navigation active state toggle
-document.querySelectorAll('.topnav a:not(.icon)').forEach(function (navItem) {
-  navItem.addEventListener('click', function () {
-    document.querySelectorAll('.topnav a').forEach(function (item) {
-      item.classList.remove('active');
+  const menuIcon = document.querySelector('#navToggle');
+  const nav = document.getElementById('myTopnav');
+
+  document.querySelectorAll('.topnav a:not(.icon)').forEach(function (navItem) {
+    navItem.addEventListener('click', function () {
+      document.querySelectorAll('.topnav a').forEach(function (item) {
+        item.classList.remove('active');
+      });
+      this.classList.add('active');
+      nav.classList.remove('responsive');
     });
-    this.classList.add('active');
   });
-});
 
-// Intersection Observer on sections
-document.addEventListener('DOMContentLoaded', () => {
+  window.addEventListener('resize', () => {
+    const nav = document.getElementById('myTopnav');
+    if (window.innerWidth > 600 && nav.classList.contains('responsive')) {
+      nav.classList.remove('responsive');
+    }
+  });
+
+  if (menuIcon && nav) {
+    menuIcon.addEventListener('click', function () {
+      nav.classList.toggle('responsive');
+    });
+  }
+
+  const animatedElements = document.querySelectorAll('.animate');
   const observerOptions = {
-    threshold: 0.2, // 30% of section visible
+    root: null,
+    threshold: 0.2,
   };
-
   const observer = new IntersectionObserver((entries, observer) => {
-    entries.forEach((entry) => {
+    entries.forEach(entry => {
       if (entry.isIntersecting) {
-        entry.target.classList.add('show');
-        observer.unobserve(entry.target); // animate only once
+        entry.target.classList.add('animate-active');
+        observer.unobserve(entry.target);
       }
     });
   }, observerOptions);
 
-  document.querySelectorAll('section.animate').forEach((section) => {
-    observer.observe(section);
+  animatedElements.forEach(el => {
+    observer.observe(el);
   });
+
+  const sections = document.querySelectorAll('section[id]');
+  const navLinks = document.querySelectorAll('.topnav a:not(.icon)');
+  const sectionObserverOptions = {
+    root: null,
+    threshold: 0.5,
+  };
+  const sectionObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        navLinks.forEach(link => link.classList.remove('active'));
+        const id = entry.target.id;
+        const activeLink = document.querySelector(`.topnav a[href="#${id}"]`);
+        if (activeLink) {
+          activeLink.classList.add('active');
+        }
+      }
+    });
+  }, sectionObserverOptions);
+
+  sections.forEach(section => {
+    sectionObserver.observe(section);
+  });
+});
+
+window.addEventListener('load', function () {
+  document.body.classList.add('page-loaded');
 });
