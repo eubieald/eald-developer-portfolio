@@ -18,6 +18,19 @@ section {
       .icon-text-column {
         text-align: left;
 
+        .icon-wrapper {
+          width: 40px;
+          height: 40px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          svg {
+            width: 40px;
+            height: 40px;
+          }
+        }
+
         .text-wrapper {
           h5 {
             margin-bottom: 0;
@@ -41,24 +54,6 @@ section {
   }
 }
 
-@include media-breakpoint-down(xs) {
-  .about-me {
-    .two-column-container {
-      .icon-wrapper {
-        width: 24px;
-        height: 40px;
-        display: flex;
-        align-items: center;
-
-        svg {
-          width: 24px;
-          height: 24px;
-        }
-      }
-    }
-  }
-}
-
 @include media-breakpoint-up(sm) {
   .about-me {
     .two-column-container {
@@ -67,17 +62,6 @@ section {
       }
 
       .icon-text-column {
-        .icon-wrapper {
-          width: 100%;
-          max-width: 56px;
-          max-height: 64px;
-
-          > svg {
-            height: 40px;
-            width: 40px;
-          }
-        }
-
         div:nth-child(2) .text-wrapper {
           width: 100%;
 
