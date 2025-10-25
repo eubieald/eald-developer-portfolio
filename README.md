@@ -1,38 +1,59 @@
-# Parcel Bootstrap SCSS Boilerplate
+# 🌐 Eald Developer Portfolio
 
-### The objective of this project is to implement a clone page using Parcel as bundler, Bootstrap as a CSS framework and SCSS as a preprocessor.
+👉 **[Visit My Portfolio → eubie-portfolio.netlify.app](https://eubie-portfolio.netlify.app/)**  
 
+Welcome to my **official developer portfolio**, showcasing my work, skills, and approach to building **modern, high-performance web applications**.
 
-This project is a trial task exam from one of the companies I applied.
-This is to clone a section of the www.pianote.com (play your favorite songs) and ensure that it's mobile and tablet responsive.
+---
 
+## 👋 About Me
 
-# What I learned:
+Hi, I’m **Eubie Ald** — a passionate **Front-End Developer** focused on creating **elegant, responsive, and user-friendly** digital experiences.
 
-* parcel bundler
-* bootstrap, scss, fontawesome icons integration to parcel
-* display:grid CSS layout styling
-* svg and video HTML tags
+I love combining creativity with clean, efficient code to design projects that are both beautiful and functional.
 
-# HOW TO INSTALL
-1. Download the project to your local
-2. cd to project root directory
-3. run npm install
-4. run npm run build (it should generate the dist folder)
-5. open dist/index.html with browser
+---
 
-Optional if you want to run via development mode:
-5. run npm run dev (it should automatically open your default browser for you with the app project)
+## 🎯 Project Overview
 
+This repository contains the code for my **personal developer portfolio**.  
+It’s designed to be:
 
-## Demo Site:
-https://parcel-bootstrap-sass-boilerplate.netlify.app/
+✅ **Responsive** – Optimized for desktop, tablet, and mobile devices  
+⚡ **Fast** – Built with performance in mind  
+🧩 **Scalable** – Organized and modular structure  
+🧠 **Modern** – Uses up-to-date tools and best practices  
 
+---
 
-## Screenshots:
+## 🛠️ Built With
 
-## How to tweak this project for your own use:
-I would recommend you to clone and rename this project so that you can use it for your own needs as it is an example project. This boilerplate is a nice place to start.
+| Technology | Description |
+|-------------|-------------|
+| **HTML5** | Semantic, accessible structure |
+| **SCSS / CSS3** | Custom styling with modern layout techniques |
+| **JavaScript (ES6+)** | Interactive and dynamic functionality |
+| **[Build Tool]** | e.g., Vite / Parcel / Webpack |
+| **[Optional Framework]** | e.g., React / Bootstrap / Tailwind |
 
-## Find a bug?
-Please use the issue tab above to report any problems you encountered or suggestions you have for improving this project. Please make mention to the issue you created if you would like to submit a pull request. I'm grateful.
+---
+
+## 🚀 Getting Started
+
+Run this project locally in a few easy steps:
+
+```bash
+# 1️⃣ Clone the repository
+git clone https://github.com/eubieald/eald-developer-portfolio.git
+
+# 2️⃣ Move into the project folder
+cd eald-developer-portfolio
+
+# 3️⃣ Install dependencies
+npm install
+
+# 4️⃣ Start the development server
+npm run dev
+
+# 5️⃣ Build for production
+npm run build
