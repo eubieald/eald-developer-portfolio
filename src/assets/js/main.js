@@ -7,8 +7,9 @@ import './slick-custom';
 import './theme-switcher';
 import './email-service';
 import './contact-us-form';
-import './toggle-nav';  
+import './toggle-nav';
 
 // Libs
 import './libs/horizontal-timeline-master/main';
 import './libs/horizontal-timeline-master/custom';
+import './libs/map-libre/maps';

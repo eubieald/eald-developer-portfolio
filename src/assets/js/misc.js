@@ -1,6 +1,8 @@
 import $ from 'jquery';
 import 'jquery-match-height';
+import { initMap } from './libs/map-libre/maps';
 
+// Match height
 document.addEventListener('DOMContentLoaded', function () {
   $('.icon-wrapper').matchHeight();
   $('.text-title').matchHeight();
@@ -37,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function () {
     threshold: 0.2,
   };
   const observer = new IntersectionObserver((entries, observer) => {
-    entries.forEach(entry => {
+    entries.forEach((entry) => {
       if (entry.isIntersecting) {
         entry.target.classList.add('animate-active');
         observer.unobserve(entry.target);
@@ -45,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }, observerOptions);
 
-  animatedElements.forEach(el => {
+  animatedElements.forEach((el) => {
     observer.observe(el);
   });
 
@@ -56,9 +58,9 @@ document.addEventListener('DOMContentLoaded', function () {
     threshold: 0.5,
   };
   const sectionObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
+    entries.forEach((entry) => {
       if (entry.isIntersecting) {
-        navLinks.forEach(link => link.classList.remove('active'));
+        navLinks.forEach((link) => link.classList.remove('active'));
         const id = entry.target.id;
         const activeLink = document.querySelector(`.topnav a[href="#${id}"]`);
         if (activeLink) {
@@ -68,11 +70,19 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }, sectionObserverOptions);
 
-  sections.forEach(section => {
+  sections.forEach((section) => {
     sectionObserver.observe(section);
   });
 });
 
 window.addEventListener('load', function () {
   document.body.classList.add('page-loaded');
+});
+
+// MapLibre
+document.addEventListener('DOMContentLoaded', () => {
+  const mapEl = document.getElementById('map');
+  if (mapEl) {
+    initMap();
+  }
 });

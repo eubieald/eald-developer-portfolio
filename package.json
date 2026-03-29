@@ -25,6 +25,7 @@
     "emailjs-com": "^3.2.0",
     "jquery": "^3.7.1",
     "jquery-match-height": "^0.7.2",
+    "maplibre-gl": "^5.15.0",
     "simple-parallax-js": "^6.2.1"
   }
 }

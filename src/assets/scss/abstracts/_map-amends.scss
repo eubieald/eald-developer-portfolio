@@ -12,15 +12,48 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 
 // Overriding spacers for margins and padding
 $custom-spacers: (
+  // Smaller than base
+  4: $spacer * 0.25,
+  // 4px
+  8: $spacer * 0.5,
+  // 8px
   12: $spacer * 0.75,
+
+  // 12px
+  // Base & near-base
+  16: $spacer,
+  // 16px
   20: $spacer * 1.25,
-  40: $spacer * 2.5,
+  // 20px
+  24: $spacer * 1.5,
+
+  // 24px
+  // Medium spacing
   32: $spacer * 2,
-  50: $spacer * 3.125,
+  // 32px
+  40: $spacer * 2.5,
+  // 40px
+  48: $spacer * 3,
+
+  // 48px
+  // Large spacing
   56: $spacer * 3.5,
-  60: $spacer * 4.0625,
+  // 56px
+  64: $spacer * 4,
+  // 64px
+  72: $spacer * 4.5,
+  // 72px
   80: $spacer * 5,
+
+  // 80px
+  // Extra large
+  96: $spacer * 6,
+  // 96px
+  112: $spacer * 7,
+  // 112px
+  128: $spacer * 8 // 128px
 );
+
 $spacers: map-merge($spacers, $custom-spacers);
 
 $custom-grid-breakpoints: (

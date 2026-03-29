@@ -29,7 +29,8 @@
   </header>
 
   <main>
-    <section id="about-me" class="container about-me px-20 py-40 px-sm-4 py-sm-56 px-xl-24 py-xl-80 text-center animate">
+    <section id="about-me"
+      class="container about-me px-20 py-40 px-sm-4 py-sm-56 px-xl-24 py-xl-80 text-center animate">
       <div class="container mx-auto p-0">
         <h2 class="mb-0">
           <strong>Hey there! 👋 I'm Eubie,</strong>
@@ -118,7 +119,7 @@
       <div class="timeline"> <button class="timeline-btn prev" disabled>←</button>
         <div class="timeline-track">
           <ul class="timeline-years">
-          <!-- TODO: to be removed -->
+            <!-- TODO: to be removed -->
             <!-- <li data-year="2025" class="active">2025</li> -->
             <li data-year="2024" class="active">2024</li>
             <li data-year="2023">2023</li>
@@ -285,8 +286,49 @@
         </div>
 
       </div>
+
+      <h2 class="text-center fs-1 text-uppercase fw-bold mb-4 mt-96">Personal Projects</h2>
+      <div class="projects-grid">
+        <!-- 01. EALD Marketplace -->
+        <div class="projects-item">
+          <div class="container">
+            <div class="projects-item-col d-flex gap-20">
+              <div class="projects-item-col-head">
+                <div class="business-text">
+                  <span class="fw-bold">01. Next JS (React), Payload CMS, TRPC, Stripe Connect</span>
+                </div>
+                <h3>EALD Marketplace</h3>
+              </div>
+              <div class="projects-item-col-body d-flex">
+                <div class="business-content">
+                  <div class="description text-start">
+                    EALD Marketplace is a multi-vendor platform that allows users to buy and sell products online.</div>
+                  <a href="https://eald-marketplace-storefront.netlify.app/" target="_blank"
+                    class="action-btn btn-chev-right">
+                    Site Visit</a>
+                </div>
+                <div class="business-img">
+                  <img src="/src/assets/images/eald-marketplace.png" alt="three nine shimano website image"
+                    class="w-100 img-fluid">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
+    <!-- TODO: to fix layout for now this will be hidden -->
+    <!-- <section id="map-section" class="container my-5 animate">
+      <h2 class="text-center fw-bold mb-4">Where I Lived 🌍</h2>
+
+      <div id="map" style="
+      width: 100%;
+      height: 500px;
+      border-radius: 16px;
+      overflow: hidden;
+    "></div>
+    </section> -->
 
     <section id="gallery" class="responsive overflow-hidden animate">
       <div><img src="assets/images/binary-anvil.png" alt="Binary Anvil employees" class="img-fluid"></div>
@@ -338,7 +380,7 @@
           </form>
         </section>
       </section>
-      <div class="footer-bottom text-center py-3 mt-4">
+      <div class="footer-bottom text-center py-3 mt-8">
         <p class="mb-0">
           © <span id="year"></span> Eubie Aluad. All rights reserved.
         </p>
